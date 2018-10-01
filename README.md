@@ -1,2 +1,2 @@
 # sqltest
-Testing SQL functions
+This repo is for testing SQL functionality within C#
