@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
+using System.Data.Common;
+using System.Data.SqlClient;
 
 namespace SQL_Test
 {
@@ -23,6 +26,25 @@ namespace SQL_Test
         public MainWindow()
         {
             InitializeComponent();
+         }
+
+        private void cmbAdviserList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int choice = cmbAdviserList.SelectedIndex;
+            Adviser adv = Globals.cmbAdviserList[choice];
+            txtID.Text = adv.id.ToString();
+            txtName.Text = adv.name;
+            txtPID.Text = adv.pid.ToString();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            DBFunctions dbConn = new DBFunctions();
+            int choice = cmbAdviserList.SelectedIndex;
+            Adviser adv = Globals.cmbAdviserList[choice];
+            adv.name = txtName.Text;
+            int.TryParse(txtPID.Text, out adv.pid);
+            dbConn.EditTestTableRecord(adv);
         }
     }
 }

@@ -6,7 +6,61 @@
         xmlns:local="clr-namespace:SQL_Test"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
     <Grid>
-        
+        <DockPanel>
+            <Menu DockPanel.Dock="Top" Margin="60,0,0.286,0" Height="385">
+                <Menu.Resources>
+                    <Style TargetType="MenuItem">
+                        <Setter Property="FontSize" Value="14"></Setter>
+                        <Setter Property="BorderBrush" Value="Transparent"></Setter>
+                        <Setter Property="Background" Value="#FF008770"></Setter>
+                        <Setter Property="Foreground" Value="Black"></Setter>
+                        <Setter Property="Height" Value="30"></Setter>
+                        <Setter Property="Width" Value="Auto"></Setter>
+                    </Style>
+                </Menu.Resources>
+                <MenuItem Header="_File" Width="100">
+                    <MenuItem Header="_New"></MenuItem>
+                    <MenuItem Header="_Open"></MenuItem>
+                    <MenuItem Header="_Save"></MenuItem>
+                    <Separator></Separator>
+                    <MenuItem Header="_Exit"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="_Reports" Width="100">
+                    <MenuItem Header="_Financial Year"></MenuItem>
+                    <MenuItem Header="_Rolling 12 Months"></MenuItem>
+                    <MenuItem Header="_Custom Dates"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="_Checks" Width="100">
+                    <MenuItem Header="New _FLM Check"></MenuItem>
+                    <MenuItem Header="New _QSC Check"></MenuItem>
+                    <MenuItem Header="New _Tier 2 Check"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="_Data" Width="100">
+                    <MenuItem Header="_Financial Year"></MenuItem>
+                    <MenuItem Header="_Rolling 12 Months"></MenuItem>
+                    <MenuItem Header="_Custom Dates"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="_Admin" Width="100">
+                    <MenuItem Header="_Permissions">
+                        <MenuItem Header="_New Permissions"></MenuItem>
+                        <MenuItem Header="_View Permissions"></MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="_Rolling 12 Months"></MenuItem>
+                    <MenuItem Header="_Custom Dates"></MenuItem>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+        <ComboBox Name="cmbAdviserList" HorizontalAlignment="Left" Margin="24,115,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbAdviserList_SelectionChanged"/>
+        <Label Name="labelID" Content="Record ID" HorizontalAlignment="Left" Margin="40,162,0,0" VerticalAlignment="Top" Width="111" Height="26"/>
+        <Label Name="labelName" Content="Name" HorizontalAlignment="Left" Margin="40,198,0,0" VerticalAlignment="Top" Width="111"/>
+        <Label Name="labelPID" Content="PID" HorizontalAlignment="Left" Margin="40,234,0,0" VerticalAlignment="Top" Width="111"/>
+        <TextBox Name="txtID" HorizontalAlignment="Left" Height="26" Margin="169,162,0,231" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="73" Padding="0" BorderBrush="#FF0C1A42"/>
+        <TextBox Name="txtName" HorizontalAlignment="Left" Height="26" Margin="169,198,0,195" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="192"/>
+        <TextBox Name="txtPID" HorizontalAlignment="Left" Height="26" Margin="169,234,0,159" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="131" RenderTransformOrigin="0.649,0.5"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Margin="371,245,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Image Source="Quality Tracker Icon.jpg" Margin="10,10,734.286,361.714" Width="50" Height="50" RenderTransformOrigin="0.486,0.08"/>
     </Grid>
+
 </Window>

@@ -1,0 +1,15 @@
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\bin\Debug\SQL Test.exe.config
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\bin\Debug\SQL Test.exe
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\bin\Debug\SQL Test.pdb
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\obj\Debug\SQL Test.csprojAssemblyReference.cache
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\obj\Debug\MainWindow.g.cs
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\obj\Debug\App.g.cs
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\obj\Debug\SQL Test_MarkupCompile.cache
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\obj\Debug\SQL Test_MarkupCompile.lref
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\obj\Debug\MainWindow.baml
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\obj\Debug\SQL Test.g.resources
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\obj\Debug\SQL_Test.Properties.Resources.resources
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\obj\Debug\SQL Test.csproj.GenerateResource.cache
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\obj\Debug\SQL Test.csproj.CoreCompileInputs.cache
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\obj\Debug\SQL Test.exe
+C:\Users\AT200378\Documents\GitHub\sqltest\SQL Test\obj\Debug\SQL Test.pdb
